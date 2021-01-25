@@ -20,6 +20,7 @@ dependencies {
     testImplementation 'com.codeborne:selenide:5.11.0'
 }
 
+
 test {
     useJUnitPlatform()
     // в тестах, вызывая `gradlew test -Dselenide.headless=true` будем передавать этот параметр в JVM (где его подтянет Selenide)
