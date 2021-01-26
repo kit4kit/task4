@@ -10,10 +10,9 @@ public class ApplicationSubmissionTest {
     @Test
     void mustSendARequest(){
         open("http://localhost:9999");
-
         $("[name='name']").setValue("Трофимов Никита");
         $("[name='phone']").setValue("+79998988778");
-        $("[name='agreement']").click();
-        $(".button__content").click();
+        $(".checkbox__box").click();
+        $("button.button").click();
         $(".alert-success").shouldHave(exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));}
 }
