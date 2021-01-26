@@ -14,5 +14,5 @@ public class ApplicationSubmissionTest {
         $("[name='phone']").setValue("+79998988778");
         $(".checkbox__box").click();
         $("button.button").click();
-        $(".alert-success").shouldHave(exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));}
+        $(".Success_successBlock__2L3Cw").shouldHave(exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));}
 }
